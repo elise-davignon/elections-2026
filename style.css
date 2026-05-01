@@ -1,0 +1,75 @@
+/* Thème orange */
+:root
+{
+	--couleur-ap-base: #ff5505;
+	--couleur-ap-neutre: #f5f5f7;
+	
+	--coleur-texte-base: #ffffff;
+	--couleur-texte-neutre: #000000;
+}
+
+body
+{
+	width:50%;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+	background: var(--couleur-ap-base);
+	font-family: "arial";
+	padding-top:28pt;
+	padding-bottom:28pt;
+}
+
+#nom
+{
+	color: var(--coleur-texte-base);
+	font-family: "Publish Gothic Condensed", sans-serif;
+	font-weight: 1000;
+	text-transform: uppercase;
+}
+
+#nom h1
+{
+	font-size:45px;
+}
+
+#nom img
+{
+	width:100%
+}
+
+#nom h2
+{
+	font-size:22pt;
+}
+
+#lettre, #pied-de-page
+{
+	margin-top:14pt;
+	margin-bottom:14pt;
+	padding-top:14pt;
+	padding-bottom:14pt;
+	background: var(--couleur-ap-neutre);
+	color: var(--couleur-texte-neutre);
+	border-radius: 10px;
+}
+
+#lettre p, #pied-de-page p
+{
+	width:90%;
+	margin:auto;
+	margin-top:14pt;
+	margin-bottom:14pt;
+	text-align:justify;
+	text-indent: 28pt;
+	font-style: oblique;
+}
+
+#lettre p.premiere-ligne,  #pied-de-page p
+{
+	text-indent: 0pt;
+}
+
+
+	
+
