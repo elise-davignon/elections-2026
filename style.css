@@ -15,9 +15,16 @@ body
 	display:flex;
 	flex-direction:column;
 	background: var(--couleur-ap-base);
+	color: var(--couleur-ap-neutre);
 	font-family: "arial";
 	padding-top:28pt;
 	padding-bottom:28pt;
+}
+
+a
+{
+	color: var(--couleur-ap-neutre);
+	font-weight:bold;
 }
 
 #nom
@@ -38,12 +45,30 @@ body
 	width:100%
 }
 
-#nom h2
+h2
 {
-	font-size:22pt;
+	text-transform: uppercase;
+	font-size: 22pt;
+	color: var(--couleur-ap-neutre);
 }
 
-#lettre, #pied-de-page
+p.date
+{
+	font-size:8pt;
+}
+
+#presentation
+{
+	color: var(--couleur-ap-neutre);
+	font-weight: 500;
+}
+
+#presentation.lede
+{
+	font-style:italic;
+}
+
+div.actualite, #lettre, #pied-de-page
 {
 	margin-top:14pt;
 	margin-bottom:14pt;
@@ -63,6 +88,28 @@ body
 	text-align:justify;
 	text-indent: 28pt;
 	font-style: oblique;
+}
+
+div.actualite h3
+{
+	width:90%;
+	margin:auto;
+	margin-top:14pt;
+}
+
+div.actualite p
+{
+	width:90%;
+	margin:auto;
+	margin-top:14pt;
+	margin-bottom:14pt;
+	text-align:justify;
+}
+
+div.actualite p a
+{
+	color: var(--couleur-texte-neutre);
+	font-weight:bold;
 }
 
 #lettre p.premiere-ligne,  #pied-de-page p
