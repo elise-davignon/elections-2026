@@ -17,7 +17,6 @@ body
 	background: var(--couleur-ap-base);
 	color: var(--couleur-ap-neutre);
 	font-family: "arial";
-	padding-top:28pt;
 	padding-bottom:28pt;
 }
 
@@ -33,6 +32,15 @@ a
 	font-family: "Publish Gothic Condensed", sans-serif;
 	font-weight: 1000;
 	text-transform: uppercase;
+	background-image: url("images/photo.jpg");
+	background-size:cover;
+	background-position: 50% 25%;
+	padding:20px;
+	height:400px;
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
 }
 
 #nom h1
@@ -40,9 +48,10 @@ a
 	font-size:45px;
 }
 
-#nom img
+#nom h1, #nom h2
 {
-	width:100%
+	margin-left:20px;
+	width:50%;
 }
 
 h2
@@ -52,9 +61,9 @@ h2
 	color: var(--couleur-ap-neutre);
 }
 
-p.date
+.date, .legende, summary
 {
-	font-size:8pt;
+	font-size: 8pt;
 }
 
 #presentation
@@ -90,6 +99,11 @@ div.actualite, #lettre, #pied-de-page
 	font-style: oblique;
 }
 
+div.actualite
+{
+	overflow: auto;
+}
+
 div.actualite h3
 {
 	width:90%;
@@ -97,7 +111,7 @@ div.actualite h3
 	margin-top:14pt;
 }
 
-div.actualite p
+div.actualite p, div.actualite details
 {
 	width:90%;
 	margin:auto;
@@ -106,10 +120,47 @@ div.actualite p
 	text-align:justify;
 }
 
-div.actualite p a
+div.actualite details p
+{
+	width:100%;
+	margin:auto;
+	margin-top:14pt;
+	margin-bottom:14pt;
+}
+
+div.actualite p a, div.actualite aside a
 {
 	color: var(--couleur-texte-neutre);
 	font-weight:bold;
+}
+
+aside
+{
+	float: right;
+	margin-right:20px;
+	margin-left:20px;
+	text-align:right;
+	width: 40%;
+}
+
+aside.photo
+{
+	float: left;
+	margin-right:20px;
+	margin-left:20px;
+	text-align:left;
+	width:40%;
+}
+
+div.actualite aside
+{
+	margin-top:14pt;
+}
+
+aside img
+{
+	width:100%;
+	margin:auto;
 }
 
 #lettre p.premiere-ligne,  #pied-de-page p
@@ -117,6 +168,8 @@ div.actualite p a
 	text-indent: 0pt;
 }
 
-
-	
-
+summary
+{
+	cursor:pointer;
+	font-weight:bold;
+}
