@@ -2,10 +2,13 @@
 :root
 {
 	--couleur-ap-base: #ff5505;
+	--couleur-ap-secondaire: #083f22;
 	--couleur-ap-neutre: #f5f5f7;
 	
 	--coleur-texte-base: #ffffff;
 	--couleur-texte-neutre: #000000;
+	
+	
 }
 
 body
@@ -52,6 +55,11 @@ a
 {
 	margin-left:20px;
 	width:50%;
+}
+
+.hl-dark
+{
+	background-color: var(--couleur-ap-secondaire);
 }
 
 h2
