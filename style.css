@@ -41,6 +41,8 @@ a
 	padding:20px;
 	height:400px;
 	
+	border-radius: 0px 0px 10px 10px;
+	
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-end;
