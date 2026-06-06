@@ -46,6 +46,12 @@ a
 	justify-content:flex-end;
 }
 
+#nom #logo
+{
+	width:20%;
+	margin-bottom:auto;
+}
+
 #nom h1
 {
 	font-size:45px;
