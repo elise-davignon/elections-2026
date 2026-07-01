@@ -158,7 +158,7 @@ div.actualite h3
 	margin-top:14pt;
 }
 
-div.actualite p, div.actualite details
+div.actualite p, div.actualite ul, div.actualite details
 {
 	width:90%;
 	margin:auto;
@@ -167,7 +167,7 @@ div.actualite p, div.actualite details
 	text-align:justify;
 }
 
-div.actualite details p
+div.actualite details p, div.actualite details ul
 {
 	width:100%;
 	margin:auto;
