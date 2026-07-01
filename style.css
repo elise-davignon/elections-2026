@@ -6,9 +6,7 @@
 	--couleur-ap-neutre: #f5f5f7;
 	
 	--coleur-texte-base: #ffffff;
-	--couleur-texte-neutre: #000000;
-	
-	
+	--couleur-texte-neutre: #000000;	
 }
 
 body
@@ -63,6 +61,37 @@ a
 {
 	margin-left:20px;
 	width:50%;
+}
+
+#menu
+{
+	color: var(--coleur-texte-base);
+	font-family: "Publish Gothic Condensed", sans-serif;
+	font-weight: 1000;
+	text-transform: uppercase;
+	
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+
+#menu .mi
+{
+	padding: 20px;
+	margin:auto;
+}
+#menu .icon
+{
+	margin : 20px;
+}
+#menu .icon a img
+{
+	height:100%;
+}
+
+a.iconlink
+{
+	text-decoration-line:none;
 }
 
 .hl-dark
